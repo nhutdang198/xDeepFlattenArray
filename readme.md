@@ -1,4 +1,4 @@
-**xDeepFlattenArray** is a JavaScript/Typescript function that recursively flattens a nested array and stores the flattened elements in a provided array.
+The **xDeepFlattenArray** function is a utility for flattening deeply nested arrays into a one-dimensional array. It recursively traverses the input array and extracts all elements, including those nested within subarrays, creating a flattened result.
 
 ## Installation
 
@@ -14,22 +14,26 @@ To use xDeepFlattenArray, you'll need to include the provided TypeScript file in
    ```typescript
    import { xDeepFlattenArray } from 'x-deep-flatten-array'
 
-   const deepArray = [1, [2, [3, 4], 5], 6];
    const flattenedArray = [];
-   xDeepFlattenArray(flattenedArray, deepArray);
+   const deepArray: DeepArray<number> = [1, [2, 3, [4, 5]], 6, [7, 8]];
+
+   const flattenedArray = xDeepFlattenArray(deepArray);
+
    console.log(flattenedArray); 
-   // Output: [1, 2, 3, 4, 5, 6]
+   // Output: [1, 2, 3, 4, 5, 6, 7, 8]
 
 2. Import the `xDeepFlattenArray` class into your Javascript code:
 
    ```javascript
    const { xDeepFlattenArray } = require("x-deep-flatten-array")
 
-   const deepArray = [1, [2, [3, 4], 5], 6];
    const flattenedArray = [];
-   xDeepFlattenArray(flattenedArray, deepArray);
+   const deepArray: DeepArray<number> = [1, [2, 3, [4, 5]], 6, [7, 8]];
+
+   const flattenedArray = xDeepFlattenArray(deepArray);
+   
    console.log(flattenedArray); 
-   // Output: [1, 2, 3, 4, 5, 6]
+   // Output: [1, 2, 3, 4, 5, 6, 7, 8]
 
 ## Support Me
 
