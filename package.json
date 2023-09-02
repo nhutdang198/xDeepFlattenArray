@@ -1,0 +1,25 @@
+{
+  "name": "x-deep-flatten-array",
+  "version": "0.0.1",
+  "description": "**xDeepFlattenArray** is a JavaScript/Typescript function that recursively flattens a nested array and stores the flattened elements in a provided array.",
+  "main": "xDeepFlattenArray.js",
+  "devDependencies": {
+    "@types/jest": "^29.5.4",
+    "jest": "^29.6.3",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "test": "npx jest",
+    "build": "npx tsc xDeepFlattenArray.ts"
+  },
+  "author": "nhutdm",
+  "license": "MIT",
+  "keywords": [
+    "x-deep-flatten-array",
+    "x deep flatten array",
+    "flattens array",
+    "flattens nested array",
+    "nested array"
+  ]
+}
